@@ -16,8 +16,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class EC2ClientBuilder {
-     private static BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIASHV2H2D77UVEDTFF", "PmvEnEk+Lb8Si/JfeZ4Bd5nVt4MJ2QEdIV20KKfB");
-    //private static BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIA5PQPUVAAXOFFN356", "0k/na4hbVsoc062dY/dbgmxl8M6ZNpfJVZ63ezVW");
+     private static BasicAWSCredentials awsCreds = new BasicAWSCredentials("//", "//");
+    //private static BasicAWSCredentials awsCreds = new BasicAWSCredentials("//", "//");
 
     private final static AmazonEC2 ec2 = AmazonEC2ClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(awsCreds)).build();
     private static ExecutorService executor = Executors.newFixedThreadPool(10);
